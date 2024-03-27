@@ -63,7 +63,7 @@ app.post("/students", async (req, res) => {
   }
 });
 
-// Get student by ID
+// Get student by ID //
 
 app.get("/students/:id", async (req, res) => {
   const studentId = req.params.id;
@@ -92,7 +92,7 @@ app.get("/students/:id", async (req, res) => {
   }
 });
 
-// Update Student by ID
+// Update Student by ID //
 
 app.put("/students/:id", async (req, res) => {
   const studentId = req.params.id;
@@ -119,7 +119,7 @@ app.put("/students/:id", async (req, res) => {
   }
 });
 
-// Delete student by ID
+// Delete student by ID //
 
 app.delete("/students/:id", async (req, res) => {
   const studentId = req.params.id;
