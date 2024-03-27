@@ -112,7 +112,6 @@ app.put("/students/:id", async (req, res) => {
     res.status(200).json({
       status: "success",
       message: "Data Mahasiswa berhasil diperbarui",
-      data: updatedStudent,
     });
   } catch (err) {
     console.error(err);
@@ -135,7 +134,6 @@ app.delete("/students/:id", async (req, res) => {
     res.status(200).json({
       status: "success",
       message: "Data Mahasiswa berhasil dihapus",
-      data: deletedStudent,
     });
   } catch (err) {
     console.error(err);
